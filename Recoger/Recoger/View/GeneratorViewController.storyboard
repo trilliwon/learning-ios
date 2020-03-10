@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EAO-Z4-Dho">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Generator-->
+        <scene sceneID="47X-Vb-0g2">
+            <objects>
+                <viewController id="EAO-Z4-Dho" customClass="GeneratorViewController" customModule="Recoger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Nw-RP-ZQg"/>
+                        <viewControllerLayoutGuide type="bottom" id="CKA-IV-eDj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EdO-Hs-0GH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input text" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MKs-vI-Uru">
+                                <rect key="frame" x="36" y="40" width="303" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UFa-iW-Zh2"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r2p-2b-aiG">
+                                <rect key="frame" x="87" y="233.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Loz-s6-VSY"/>
+                                    <constraint firstAttribute="width" constant="200" id="kb8-NM-u4V"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xt3-2m-NBA" customClass="RoundedButton" customModule="Recoger" customModuleProvider="target">
+                                <rect key="frame" x="239" y="614" width="100" height="33"/>
+                                <color key="backgroundColor" red="0.23529411759999999" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="AVT-JP-aeC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <state key="normal" title="Generate">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isDefaultRoundStyle" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundCorner" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="performButtonAction:" destination="EAO-Z4-Dho" eventType="touchUpInside" id="Nvl-in-aac"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xt3-2m-NBA" secondAttribute="trailing" constant="20" id="EBd-SG-wTT"/>
+                            <constraint firstItem="CKA-IV-eDj" firstAttribute="top" secondItem="Xt3-2m-NBA" secondAttribute="bottom" constant="20" id="Gnd-Fc-s4a"/>
+                            <constraint firstItem="r2p-2b-aiG" firstAttribute="centerX" secondItem="EdO-Hs-0GH" secondAttribute="centerX" id="Jme-bx-R7Y"/>
+                            <constraint firstItem="MKs-vI-Uru" firstAttribute="top" secondItem="7Nw-RP-ZQg" secondAttribute="bottom" constant="20" id="YOP-IR-erL"/>
+                            <constraint firstItem="MKs-vI-Uru" firstAttribute="leading" secondItem="EdO-Hs-0GH" secondAttribute="leadingMargin" constant="20" id="ZFQ-mq-wnd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xt3-2m-NBA" secondAttribute="trailing" constant="20" id="ern-aV-3WH"/>
+                            <constraint firstItem="MKs-vI-Uru" firstAttribute="centerX" secondItem="r2p-2b-aiG" secondAttribute="centerX" id="jbL-2h-9es"/>
+                            <constraint firstItem="r2p-2b-aiG" firstAttribute="centerY" secondItem="EdO-Hs-0GH" secondAttribute="centerY" id="rYz-xh-8xd"/>
+                            <constraint firstItem="MKs-vI-Uru" firstAttribute="centerX" secondItem="EdO-Hs-0GH" secondAttribute="centerX" id="yke-d7-i1G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wG9-t6-TAl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Generator" image="generator" id="231-uc-luH"/>
+                    <connections>
+                        <outlet property="generateButton" destination="Xt3-2m-NBA" id="Sta-Oj-rYu"/>
+                        <outlet property="imgQRCode" destination="r2p-2b-aiG" id="aMT-kd-myD"/>
+                        <outlet property="textField" destination="MKs-vI-Uru" id="a8k-HT-3qh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZC-3i-dBz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="generator" width="25" height="25"/>
+    </resources>
+</document>
